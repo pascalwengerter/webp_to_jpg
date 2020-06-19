@@ -10,7 +10,7 @@ def convert_webp_to_jpg(file):
     im.save(file.replace("webp", "jpg"), "jpeg")
     print(file + "successfully converted")
 
-# On macOS, you might want to remove '.DS_Store' first, word
+# On macOS, you might want to remove '.DS_Store' first
 for filename in os.listdir(target_dir):
     full_path = os.path.abspath(target_dir + filename)
     convert_webp_to_jpg(full_path)
