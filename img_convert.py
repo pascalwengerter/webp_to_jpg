@@ -1,9 +1,8 @@
 import os
-import sys
 from PIL import Image
 
 # Replace with applicable folder name
-target_dir = "../images_to_convert/"
+target_dir = "../convert/"
 
 def convert_webp_to_jpg(file):
     im = Image.open(file).convert("RGB")
